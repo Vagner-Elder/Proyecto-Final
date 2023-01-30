@@ -1,0 +1,411 @@
+
+body {
+    color: #666666;
+    background: #00539C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    font-weight: 100;
+}
+
+
+a:hover,
+a:active,
+a:focus {
+    color: #333333;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+/********** Header CSS *********/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0 0 0;
+    background: #00539C;
+}
+
+.header.home {
+    margin-bottom: 45px;
+   /* background: linear-gradient(rgba(0, 83, 156, 1), rgba(0, 83, 156, .9), rgba(0, 83, 156, 1)), url(../img/header.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .header .row {
+        padding: 0 60px;
+    }
+}
+
+ /*linea*/
+.header .header-top {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.header .brand {
+    position: relative;
+}
+
+.header .brand a {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.header .brand img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 100px;
+}
+
+.header .topbar {
+    position: relative;
+    text-align: right;
+}
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.header .topbar-col a {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #FFD662;
+}
+
+@media (min-width: 992px) {
+    .header .navbar {
+        background: transparent !important;
+    }  
+    .header .navbar-light a.nav-link,
+    .header .navbar-light .show > .nav-link {
+        position: relative;
+        padding: 8px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        z-index: 1;
+    }
+    
+    .header .navbar-light a.nav-link:hover,
+    .header .navbar-light a.nav-link.active {
+        color: #FFD662;
+    }
+}
+
+.header .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header .hero h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.header .hero h2 span {
+    color: #FFD662;
+}
+
+.header .hero p {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.header .hero a.btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00539C;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: .3s;
+}
+
+.header .hero a.btn:hover {
+    color: #000000;
+    background: #FFD662;
+}
+
+.header .hero .form {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+}
+
+.header .hero .form h3 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.header .hero .form input {
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .2);
+}
+
+.header .hero .form textarea {
+    height: 75px;
+}
+
+.header .hero .form input::placeholder{
+    color: #ffffff;
+}
+
+.header .hero .form .btn {
+    position: relative;
+    padding: 10px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: #FFD662;
+    transition: .3s;
+}
+
+.header .hero .form .btn:hover {
+    color: #00539C;
+    background: #ffffff;
+}
+.col-name{
+    color: white;
+    font-size:20px;
+    text-align: center;
+}
+.col-text{
+    text-align: center;
+    color: #FFD662;
+    font-size: 13px;
+}
+#tabla{
+    width: 100%;
+}
+#table-content{
+    width:100%;        
+}
+#edit{
+    float: left;
+    width: 49%;
+   text-align: center;
+   height: 36px;
+   padding-top: 5px;
+   background:none;
+   border:1px solid white;
+   border-radius: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#del{
+    float: right;
+    width: 49%;
+    text-align: center;
+    height: 36px;
+    background-color: red;
+   border:1px solid red;
+   border-radius: 10px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#edit:hover{
+    background-color: #FFD662;
+    color: #00539C;
+    border:1px solid #FFD662;
+}
+#del:hover{
+    background-color: rgb(207, 27, 3);
+    border: 1px solid rgb(207, 27, 3);
+}
+#btn-new{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 150px;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+#btn-new:hover{
+    background-color: #FFD662;
+    color: #00539C;
+    font-weight: 700;
+}
+.text-u{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    color: white;
+}
+#bag{
+    width: 500px;
+}
+.form-crear{
+    width: 400px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top:-15px;
+}
+.btn{
+    width: 100%;
+    background-color: #FFD662;
+    color: #00539C;
+    font-weight: 700;
+    border: 1px solid #FFD662;
+}
+label{
+    color:#FFD662;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#div-tit{
+    color:#FFD662;
+    font-weight: 700;
+    margin-top: 25px;
+}
+#btn-pdf{
+    margin-top: 4px;
+    float: left;
+    width: 100%;
+   text-align: center;
+   height: 36px;
+   padding-top: 5px;
+   background:none;
+   border:1px solid white;
+   border-radius: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn-pdf:hover{
+    background-color: #FFD662;
+    color: #00539C;
+    border:1px solid #FFD662;
+}
+#div-icon-name{
+    float: left;
+    color: #FFD662;
+}
+#div-name-user{
+    float: right;
+    color: #FFD662;
+}
+.div-index{
+    width: 100%;
+    height: 70px;
+    margin-top: -70px;
+}
+#div1{
+    float: left;
+    padding-top: 12px;
+    color: #ffffff;
+}
+#div2{
+    float: right;
+    padding-top: 20px;
+    color: #ffffff;
+}
+#create-new{
+    color: white;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#create-new1{
+    color:#FFD662;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-creat-venta{
+    width: 1230px;
+}
+#div-total{
+    width: 1050px;
+    text-align:right;
+    font-size:30px;
+}
+#btn-env{
+    
+    padding-left:450px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++ PAGINA PRINCIPAL +++++++*/
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+
+/* Content */
+.elements{
+    margin-left: 25px;
+}
+.elements-three li, .elements-four li{margin-bottom:50px;}
+.elements-three li:nth-last-child(-n+3), .elements-four li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
+.elements-three li:nth-child(3n+1), .elements-four li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.elements article{display:block; padding:30px 15px; border-radius:50px 0; text-align:center;}
+.elements article *{margin:0 0 15px 0; padding:0; line-height:1;}
+.elements article i{width:60px; height:60px; line-height:60px; margin-bottom:30px; font-size:1.6rem; text-align:center; border-radius:50%;}
+.elements article .heading{font-size:25px; font-weight:700;}
+.elements article p{margin:0; line-height:normal;}
+
+/* Content Area */
+.elements article{color:#474747; font-weight: 700 ;background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3);}
+
+/* ###### DELETE THE FOLLOWING IF ONLY THE DEFAULT COLOUR IS REQUIRED ###### */
+#introblocks .elements li article{color:#FFFFFF; background-color:#97A9BD;}
+#introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}
+#introblocks .elements li article:hover{color:#00539C;background-color:#FFD662 !important;}
+#introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
+#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#97A9BD;}
+#introblocks .elements li:nth-child(2) article a i{color:#97A9BD;}/* Purple */
+#introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a i{background-color:#97A9BD;}/* Brown */
+#introblocks .elements li:nth-child(3) article a i{color:#97A9BD;}
+/* ###### END DELETE ###### */
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+
+
+.bloce{
+    margin-top: -5px;
+height: 290px;
+
+}
+#ulf{
+   margin-left: 150px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++ FIN PAGINA PRINCIPAL ++++++++++++++++++++++++++++++++++++++*/
+
+/*PDF IMPRIMIR*/
+
